@@ -1,0 +1,7 @@
+tensorflow==2.2
+keras 
+numpy
+pandas
+matplotlib
+opencv-python
+flask

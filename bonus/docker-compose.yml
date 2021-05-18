@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  algo_container:
+    image: meriemtest/myrepository:secondcontainer
+    volumes:
+      - share:/test/
+
+  ui_container:
+    image: meriemtest/myrepository:firstcontainer
+    volumes:
+      - share:/test
+    restart: always
+    ports:
+      - "5000:5000"
+    depends_on:
+      - "algo_container"
+
+volumes:
+  share:
+
+  
+

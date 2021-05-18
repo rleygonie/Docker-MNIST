@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Accueil</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="col-md-8 col-lg-12"> -->
+            <center><h1>Reconnaissance automatique de chiffre (CNN)</h1></center>
+            <img src="../static/image/background2.jpg" width = "100%" height = 250px style="opacity: 0.8;" alt="">
+            <center><div id="paint">
+                <h4>Veuillez écrire un chiffre (0-9) dans le cadre</h4>
+                <canvas id="myCanvas" width=112px height=112px style="border: 2px solid black;"></canvas>
+                <br>
+                <h5 id="predict" style="position: absolute;padding-left: 45%;"></h5>
+                <br>
+                <br>
+                <button onclick="predict()" class="btn btn-primary">Prédire</button>
+                <form action="/" method="post">
+                    <br>
+                    <label>Veuillez nous dire quel chiffre vous aviez écrit afin d'améliorer les prformances du modèle :) </label>
+                    <input type="number" name="val">
+                    <button class="btn btn-danger" type="submit">Rafraîchir</button>
+                    <br>
+                </form>
+            </div></center>
+        <!-- </div>
+    </div> -->
+    <script src="static/index.js"></script>
+            
+</body>
+</html>

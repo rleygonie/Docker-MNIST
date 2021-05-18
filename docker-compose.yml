@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  algo_container:
+    build: ./algo_container
+    volumes:
+      - share:/projet_digit/shared/
+
+  ui_container:
+    build: ./ui_container
+    volumes:
+      - share:/projet_digit/shared/
+    restart: always
+    ports:
+      - "5000:5000"
+    depends_on:
+      - "algo_container"
+
+volumes:
+  share:
+      
+
